@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 
 type Props = {
-  setToken: React.Dispatch<React.SetStateAction<string>>;
+  setToken: (token: string) => void;
 }
 
 const LoginUser = async (username: string, password: string) => {
